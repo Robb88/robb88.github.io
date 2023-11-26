@@ -1,0 +1,61 @@
+<!-- index.php -->
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+</head>
+<body>
+    <form action="pagina2.php" method="post">
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" required><br>
+
+        <label for="cognoms">Cognoms:</label>
+        <input type="text" name="cognoms" required><br>
+
+        <label for="edat">Edat:</label>
+        <input type="number" name="edat" required><br>
+
+        <label for="adreca">Adreça:</label>
+        <input type="text" name="adreca" required><br>
+
+        <label for="provincia">Província:</label>
+        <select name="provincia" required>
+            <option value="Lleida">Lleida</option>
+            <option value="Tarragona">Tarragona</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Girona">Girona</option>
+        </select><br>
+
+        <label for="telefon">Telèfon:</label>
+        <input type="tel" name="telefon" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label for="color">Color preferit:</label>
+        <input type="color" name="color" required><br>
+
+        <label for="cicle">Cicle que estudia:</label>
+        <select name="cicle" required>
+            <option value="SMX">SMX</option>
+            <option value="ASIX">ASIX</option>
+            <option value="DAM">DAM</option>
+            <option value="DAW">DAW</option>
+        </select><br>
+
+        <label>Estat civil:</label><br>
+        <input type="radio" name="estat_civil" value="solter" checked> Solter
+        <input type="radio" name="estat_civil" value="casat"> Casat
+        <input type="radio" name="estat_civil" value="separat"> Separat
+        <input type="radio" name="estat_civil" value="viudo"> Viudo<br>
+
+        <label>Estat professional:</label><br>
+        <input type="checkbox" name="estudiant" value="estudiant"> Estudiant
+        <input type="checkbox" name="treballador" value="treballador"> Treballador<br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
